@@ -61,13 +61,27 @@
     <Analyzer Include="E:\6000.0.44f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\Bullet\BulletBehavior.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\Mobile\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\NaveMeshAgent.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\FirstPersonController\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\EnemyAI.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\PlayerShooter.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\BulletShooter.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\Bullet.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\PlayerHealth.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\BulletManager.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\ThirdPersonController.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\BulletMover.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\AIBulletManager.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\AgentMoveToTransform.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\InputSystem\StarterAssetsInputs.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\BaseBulletManager.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\Common\BasicRigidBodyPush.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\PlayerLocatorSingleton.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\Mobile\Scripts\TouchscreenInput.cs" />
-    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\BulletManager.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\EnemyHealth.cs" />
+    <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\AI\AIPlayerController.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\Bullet\PhysicsBullet.cs" />
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\Runtime\ThirdPersonController\Scripts\Bullet\RaycastBullet.cs" />
