@@ -63,6 +63,8 @@
   <ItemGroup>
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Gamemanager.cs" />
+    <Compile Include="Assets\Scenes\Chris_Assignment\GameManager.cs" />
+    <Compile Include="Assets\Scenes\Chris_Assignment\SceneLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\1233_GameProgramming\TextMesh Pro\Shaders\TMPro.cginc" />

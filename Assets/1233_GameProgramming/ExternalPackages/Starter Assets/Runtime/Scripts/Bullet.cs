@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 30f;
-    public float lifeTime = 5f;
+    public float lifeTime = 1.5f;
 
     private Rigidbody rb;
 

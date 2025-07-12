@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7291589565815130820}
   - component: {fileID: 3349012388507457772}
   - component: {fileID: -5833195621571453644}
-  - component: {fileID: -8013906909722128190}
+  - component: {fileID: -4465435956732482849}
   m_Layer: 0
   m_Name: BulletPerfab
   m_TagString: Untagged
@@ -137,7 +137,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-8013906909722128190
+--- !u!114 &-4465435956732482849
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,9 +146,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6282051728040759305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0039f1b896fdd74b962a36fd505faf5, type: 3}
+  m_Script: {fileID: 11500000, guid: fb12ff220bc0e5e4b96e9260c3e633e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  shootOrigin: {fileID: 0}
-  bulletSpeed: 20
+  speed: 30
+  lifeTime: 5
