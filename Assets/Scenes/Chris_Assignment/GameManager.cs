@@ -1,44 +1,70 @@
+// Scripts/GameManager.cs
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject resultPanel;
-    public Text resultText;
-    public bool isGameOver = false;
+    public static GameManager Instance;
 
-    void Start()
+    public GameObject gameOverUI;
+    public GameObject victoryUI;
+    public GameObject pauseUI;
+
+    private bool isGameOver = false;
+
+    void Awake()
     {
-        Time.timeScale = 1;
-        resultPanel.SetActive(false);
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
     }
 
-    public void WinGame()
+    public void GameOver()
     {
-        GameOver("You Win!");
-    }
-
-    public void LoseGame()
-    {
-        GameOver("You Lose!");
-    }
-
-    void GameOver(string message)
-    {
+        if (isGameOver) return;
         isGameOver = true;
-        Time.timeScale = 0;
-        resultPanel.SetActive(true);
-        resultText.text = message;
+        Time.timeScale = 0f;
+        gameOverUI.SetActive(true);
     }
 
-    public void RestartGame()
+    public void Victory()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (isGameOver) return;
+        isGameOver = true;
+        Time.timeScale = 0f;
+        victoryUI.SetActive(true);
     }
 
-    public void BackToMenu()
+    public void Restart()
     {
-        SceneManager.LoadScene("MainTitle");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ReturnToMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f;
+        pauseUI.SetActive(true);
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        pauseUI.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (!isGameOver && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        {
+            Victory();
+        }
     }
 }

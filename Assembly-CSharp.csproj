@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\1233_GameProgramming\ExternalPackages\Starter Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scenes\Chris_Assignment\MainMenuUI.cs" />
     <Compile Include="Assets\Scripts\Gamemanager.cs" />
     <Compile Include="Assets\Scenes\Chris_Assignment\GameManager.cs" />
     <Compile Include="Assets\Scenes\Chris_Assignment\SceneLoader.cs" />
