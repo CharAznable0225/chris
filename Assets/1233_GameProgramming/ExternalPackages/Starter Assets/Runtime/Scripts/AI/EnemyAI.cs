@@ -67,7 +67,7 @@ public class EnemyAI : MonoBehaviour
 
                 if (Time.time - lastAttackTime >= attackCooldown)
                 {
-                    animator.SetTrigger("Attack");
+                    animator.SetTrigger("Shoot");
                     lastAttackTime = Time.time;
                 }
 

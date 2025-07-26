@@ -6,7 +6,7 @@ public class MainMenuUI : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("GameScene"); // 改成你的主場景名稱
+        SceneManager.LoadScene("Chris_Assignment"); 
     }
 
     public void QuitGame()

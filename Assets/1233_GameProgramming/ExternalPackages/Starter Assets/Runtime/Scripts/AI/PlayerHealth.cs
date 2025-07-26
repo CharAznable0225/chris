@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHP <= 0)
         {
             Debug.Log("Player Dead");
-            // 這裡可以做 Game Over 或死亡動畫
+            
         }
     }
 
@@ -30,7 +30,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(10); // 敵人碰撞造成傷害
+            TakeDamage(10);
         }
     }
 }
+
+

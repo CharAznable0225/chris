@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scenes\Chris_Assignment\MainMenuUI.cs" />
     <Compile Include="Assets\Scripts\Gamemanager.cs" />
     <Compile Include="Assets\Scenes\Chris_Assignment\GameManager.cs" />
+    <Compile Include="Assets\Scenes\Chris_Assignment\ButtonActions.cs" />
     <Compile Include="Assets\Scenes\Chris_Assignment\SceneLoader.cs" />
   </ItemGroup>
   <ItemGroup>

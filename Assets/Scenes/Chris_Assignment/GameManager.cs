@@ -1,4 +1,3 @@
-// Scripts/GameManager.cs
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -24,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         if (isGameOver) return;
         isGameOver = true;
-        Time.timeScale = 0f;
+        Time.timeScale = 2f;
         gameOverUI.SetActive(true);
     }
 
@@ -32,20 +31,20 @@ public class GameManager : MonoBehaviour
     {
         if (isGameOver) return;
         isGameOver = true;
-        Time.timeScale = 0f;
+        Time.timeScale = 2f;
         victoryUI.SetActive(true);
     }
 
     public void Restart()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 2f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ReturnToMenu()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 2f;
+        SceneManager.LoadScene("MainTitle");
     }
 
     public void PauseGame()
@@ -58,13 +57,5 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         pauseUI.SetActive(false);
-    }
-
-    void Update()
-    {
-        if (!isGameOver && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
-        {
-            Victory();
-        }
     }
 }
